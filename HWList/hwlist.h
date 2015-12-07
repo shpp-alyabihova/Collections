@@ -377,7 +377,8 @@ public:
         ++it;
         for(iterator j = it; j != end(); ++j){
             iterator sortIt = j;
-            iterator i = --j;
+            iterator i = j;
+            --i;
             if (*i <= *sortIt){
                 continue;
             }
